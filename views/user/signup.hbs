@@ -1,0 +1,91 @@
+
+            <br><br>
+            
+        <div class="row">
+
+            <div class="col-md-4">
+              
+
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+        <div class="clearfix"> &nbsp; </div>
+
+        <div class="clearfix"> &nbsp; </div>
+
+{{#if hasErrors}}
+  <div class="alert alert-danger">
+     {{# each messages }}
+      <p>{{this}}</p>
+      {{/each}}
+      </div>
+{{/if}}
+                    <div class="border rounded " style="background-color:#fff">
+
+                          <form action="/user/signup" method="post">
+                             
+        
+        
+                                <div class="form-group ml-3 mr-3 mt-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                     </div>
+                                    <input name="email" class="form-control" placeholder="email" type="email">
+                                </div> <!-- input-group.// -->
+                                </div> <!-- form-group// -->
+
+
+
+                                <div class="form-group ml-3 mr-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                     </div>
+                                    <input class="form-control" placeholder="password" type="password" name="password">
+                                </div> <!-- input-group.// -->
+                                </div> <!-- form-group// -->
+
+                                <div class="form-group ml-3 mr-3">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                             </div>
+                                            <input class="form-control" placeholder="confirm password" type="password" name="confirmPassword">
+                                        </div> <!-- input-group.// -->
+                                        </div> <!-- form-group// -->
+
+
+                                <div class="form-group ml-3 mr-3">
+                                    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+                                <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+                                </div> <!-- form-group// -->
+                               
+                                </form>
+
+                        
+
+              </div>
+              <div class="form-group border  rounded mt-5">
+                    <p class="m-3 ">Already hane an account? <a href="/user/signin">   log in</a></p>
+                   </div>
+                   
+       
+                   <div class="clearfix"> &nbsp; </div>
+                </div>
+
+            
+            <div class="col-md-4">
+              
+
+
+                </div>
+
+                
+            </div>
+
+  

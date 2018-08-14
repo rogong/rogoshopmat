@@ -1,0 +1,29 @@
+    <div class="mt-5">
+            <h3 class="text-center">Product
+                <span class="font-weight-bold">Details</span>
+            </h3>
+
+
+        </div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    {{# product }}
+
+<div class="col-md-8 mb-3">
+ <div class="float-left"> <img  src="{{ this.imagePath}}" 
+ alt="{{ this.title}}" style="width: 20rem;"></div>
+  <div class="float-right">
+    <h5 ><strong>{{ this.title}}</strong></h5>
+    <p>{{ this.description}}</p>
+      <strong class="badge badge-success badge-pill text-light">
+          Price: ${{ this.price }}</strong>
+    <a href="/add-to-cart/{{this._id}}" class="btn btn-sm btn-primary mt-3">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Add to cart</a>
+  </div>
+</div>
+{{/product}}
+
+
+<div class="col-md-2"></div>
+</div>
